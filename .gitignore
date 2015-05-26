@@ -1,0 +1,8 @@
+# Composer
+vendor/
+
+# OSX
+.DS_Store
+
+# IDE
+.idea
