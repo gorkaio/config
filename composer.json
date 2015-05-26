@@ -2,10 +2,17 @@
     "name": "gorka/config",
     "description": "Configuration management",
     "require": {
-        "gorka/dot-notation-access": "^1.0"
+        "gorka/dot-notation-access": "^1.0",
+        "symfony/yaml": "^2.6"
     },
     "require-dev": {
-        "phpunit/phpunit": "^4.6"
+        "phpunit/phpunit": "^4.6",
+        "mikey179/vfsStream": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gorka\\Config\\": "src/"
+        }
     },
     "license": "MIT",
     "authors": [
