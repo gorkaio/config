@@ -1,4 +1,4 @@
-1.0.0 / 2015-05-26
-==================
+# Change Log
 
-  * Initial release
+## [1.0.0] - 2015-05-26
+- Initial release

@@ -1,8 +1,12 @@
 # Composer
+composer.lock
 vendor/
 
-# OSX
-.DS_Store
+# Build
+build
 
 # IDE
 .idea
+
+# OSX
+.DS_Store

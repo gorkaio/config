@@ -1,12 +1,28 @@
 {
     "name": "gorka/config",
     "description": "Configuration management",
+    "authors": [
+        {
+            "name": "Gorka López de Torre",
+            "email": "glopezdetorre@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "stable",
     "require": {
         "gorka/dot-notation-access": "^1.0",
         "symfony/yaml": "^2.6"
     },
     "require-dev": {
-        "phpunit/phpunit": "^4.6",
+        "ext-xdebug": ">=2.1.4",
+        "phpunit/phpunit": "~4.6",
+        "phpspec/phpspec": "^2.3",
+        "henrikbjorn/phpspec-code-coverage": "^1.0",
+        "squizlabs/php_codesniffer": "^2.3",
+        "sjparkinson/static-review": "^5.1",
+        "phing/phing": "^2.12",
+        "sensiolabs/security-checker": "^3.0",
+        "halleck45/phpmetrics": "^1.3",
         "mikey179/vfsStream": "^1.5"
     },
     "autoload": {
@@ -14,12 +30,9 @@
             "Gorka\\Config\\": "src/"
         }
     },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Gorka López de Torre",
-            "email": "glopezdetorre@gmail.com"
-        }
-    ],
-    "minimum-stability": "stable"
+    "scripts": {
+        "post-install-cmd": [
+            "vendor/bin/phing githook:install"
+        ]
+    }
 }
