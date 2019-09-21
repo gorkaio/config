@@ -1,3 +1,5 @@
+⚠️ __This project is unmaintained and might eventually be removed. Use it at your own risk.__
+
 # Configuration management
 
 Configuration management for PHP
